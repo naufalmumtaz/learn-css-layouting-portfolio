@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: #2c3f50;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  padding: 0px 80px;
+}
+
+section {
+  padding: 40px 0px;
+}
+
+main .hero {
+  background-image: linear-gradient(to right, #667be6, #705cba);
+  height: 80vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .hero h2 {
+  font-size: 32px;
+}
+
+main .hero p {
+  margin-top: 10px;
+}
+
+main section .title {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+main .tentang .card {
+  margin-top: 20px;
+}
+
+main .tentang .card .card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+main .tentang .card .card__body img {
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .tentang .card .card__body .info {
+  text-align: center;
+  font-size: 18px;
+}
+
+main .tentang .card .card__body .techstack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+main .tentang .card .card__body .techstack__item {
+  background-color: #f0efef;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main .proyek {
+  background-color: #f9f9f9;
+}
+
+main .proyek .projects {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+main .proyek .projects .card {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.15);
+}
+
+main .proyek .projects .card .card__body img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .proyek .projects .card .card__body h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+main .kontak .input-group {
+  width: 100%;
+  margin: auto;
+}
+
+main .kontak .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .kontak .input-group input,
+main .kontak .input-group textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(218, 218, 218) !important;
+}
+
+main .kontak .input-group button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #3597db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2c3f50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  main .proyek .projects .card {
+    width: 18rem;
+  }
+
+  main .kontak .input-group {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  main .tentang .card .card__body {
+    text-align: left;
+  }
+
+  main .tentang .card .card__body .techstack {
+    justify-content: left;
+  }
+}

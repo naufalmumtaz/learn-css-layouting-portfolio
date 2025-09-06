@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#hero">Home</a>
+        </li>
+        <li>
+          <a href="#tentang">Tentang</a>
+        </li>
+        <li>
+          <a href="#proyek">Proyek</a>
+        </li>
+        <li>
+          <a href="#kontak">Kontak</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <h2>Halo, Saya Naufal Mumtaz</h2>
+          <p>Web Developer "Pemula"</p>
+        </div>
+      </section>
+      <section class="tentang" id="tentang">
+        <div class="container">
+          <h2 class="title">Tentang Saya</h2>
+          <div class="card">
+            <div class="card__body">
+              <img src="./assets/Mumtaz.jpg" alt="Img Profile" />
+              <div>
+                <p class="info">
+                  Saya adalah seorang "pemula" dalam web development yang sedang
+                  belajar HTML dan CSS <b>Keterampilan</b>
+                </p>
+                <div class="techstack">
+                  <div class="techstack__item">HTML5</div>
+                  <div class="techstack__item">CSS3</div>
+                  <div class="techstack__item">Flexbox</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="proyek" id="proyek">
+        <div class="container">
+          <h2 class="title">Proyek Saya</h2>
+          <div class="projects">
+            <div class="card">
+              <div class="card__body">
+                <img
+                  src="./assets/projects/web-school.PNG"
+                  alt="project image"
+                />
+                <h4>Website Sekolah</h4>
+                <p>Website informasi sekolah menggunakan HTML dan CSS</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img
+                  src="./assets/projects/registration-form.PNG"
+                  alt="project image"
+                />
+                <h4>Form Registrasi</h4>
+                <p>Formulir pendaftaran dengan validasi HTML5</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img src="./assets/projects/blog.PNG" alt="project image" />
+                <h4>Blog Pribadi</h4>
+                <p>Blog sederhana dengan layout flexbox</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="kontak" id="kontak">
+        <div class="container">
+          <h2 class="title">Hubungi Saya</h2>
+          <form action="" method="post">
+            <div class="input-group">
+              <div class="input-form">
+                <label for="name">Nama:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="input-form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="input-form">
+                <label for="message">Pesan:</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Portofolio Saya. All rights reserved</p>
+    </footer>
+  </body>
+</html>
